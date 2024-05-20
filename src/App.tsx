@@ -5,7 +5,6 @@ function App() {
   return (
     <>
       <div>Test</div>
-      <Like onclick={() => console.log("Clicked!")} />
     </>
   );
 }
