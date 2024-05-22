@@ -1,5 +1,6 @@
 const getCropedImageUrl = (url: string) => {
   const target = "media/";
+  if(url == null) return "";
 
   let index = url.indexOf(target) + target.length;
 
