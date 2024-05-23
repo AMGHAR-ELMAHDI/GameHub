@@ -23,6 +23,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#features">Features</a></li>
       </ul>
     </li>
     <li>
@@ -40,10 +41,20 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
+## Features
+
+- Browse and search through a comprehensive library of games
+- Filter games by genre, platform, and release date
+- Sort games by relevance, title, or release date
+- View detailed information about each game, including screenshots, description, and ratings
+- Responsive design that works well on desktop and mobile devices
+
 ### Built With
 
 - <a href="https://reactjs.org/">React</a>
 - <a href="https://v2.chakra-ui.com/">Chakra</a>
+- <a href="https://axios-http.com/">Axios</a>
+- <a href="https://react-icons.github.io/react-icons/">React-icons</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,7 +65,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 - Node.js
-  <h3 align="center" ><a href="https://nodejs.org/en/download/package-manager">Click Here to Install</a></h3>
+  <h3><a href="https://nodejs.org/en/download/package-manager">Click Here to Install</a></h3>
 
 ### Installation
 
@@ -78,6 +89,10 @@ To get a local copy up and running follow these simple example steps.
 ```sh
  npm run preview
 ```
+```sh
+Open the app in your browser: http://localhost:5173
+```
+  <h2 align="center"><a href="http://localhost:5173">Click Here for Local Preview</a></h2>
 
 ## Contact
 
