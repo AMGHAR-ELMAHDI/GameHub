@@ -39,7 +39,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name ScreenShot][product-screenshot]](https://example.com)
 
 ## Features
 
@@ -56,7 +56,7 @@
 - <a href="https://axios-http.com/">Axios</a>
 - <a href="https://react-icons.github.io/react-icons/">React-icons</a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Getting Started
 
@@ -71,7 +71,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/AMGHAR-ELMAHD/GameHub.git
+   git clone https://github.com/AMGHAR-ELMAHDI/GameHub.git
    ```
 2. Install NPM packages
    ```sh
@@ -82,16 +82,18 @@ To get a local copy up and running follow these simple example steps.
     npm run build
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Usage
 
 ```sh
  npm run preview
 ```
+
 ```sh
 Open the app in your browser: http://localhost:5173
 ```
+
   <h2 align="center"><a href="http://localhost:5173">Click Here for Local Preview</a></h2>
 
 ## Contact
@@ -104,6 +106,6 @@ AMGHAR ELMAHDI
 
 - amgharmadhi1@gmail.com
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 [product-screenshot]: images/screenshot.png
