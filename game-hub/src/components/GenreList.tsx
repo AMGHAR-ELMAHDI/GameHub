@@ -5,6 +5,7 @@ import {
   Image,
   List,
   ListItem,
+  Show,
   Spinner,
   Text,
   useColorMode,
@@ -32,16 +33,26 @@ function GenreList({ onSelectGenre, selectedGenre }: Props) {
       <Heading fontSize={"3xl"} marginBottom={3}>
         Genres
       </Heading>
-      <List>
+      <List spacing={2}>
         {data.map((data) => (
           <ListItem key={data.id} paddingY={"5px"}>
             <HStack spacing={"10px"}>
-              <Image
-                boxSize={"32px"}
-                borderRadius={8}
-                src={data.image_background}
-                objectFit={"cover"}
-              />
+              <Show above="lg">
+                <Image
+                  boxSize={"40px"}
+                  borderRadius={8}
+                  src={data.image_background}
+                  objectFit={"cover"}
+                />
+              </Show>
+              <Show below="lg">
+                <Image
+                  boxSize={"30px"}
+                  borderRadius={8}
+                  src={data.image_background}
+                  objectFit={"cover"}
+                />
+              </Show>
               <Button
                 whiteSpace={"normal"}
                 textAlign={"left"}

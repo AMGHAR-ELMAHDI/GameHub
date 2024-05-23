@@ -5,6 +5,7 @@ import {
   Drawer,
   DrawerOverlay,
   DrawerContent,
+  Show,
 } from "@chakra-ui/react";
 
 import logo from "../assets/logo.webp";
@@ -27,21 +28,23 @@ function NavBar({ onSearch }: Props) {
 
   return (
     <HStack padding={"10px"}>
-      <Drawer
-        isOpen={isOpen}
-        placement="left"
-        onClose={onClose}
-        finalFocusRef={btnRef}
-      >
-        <DrawerOverlay />
-        <DrawerContent>
-          <GenreList
-            selectedGenre={genre}
-            onSelectGenre={(genre) => setGenre(genre)}
-          />
-        </DrawerContent>
-      </Drawer>
-      <Image src={logo} boxSize="60px" onClick={onOpen} />
+      <Show below="lg">
+        <Drawer
+          isOpen={isOpen}
+          placement="left"
+          onClose={onClose}
+          finalFocusRef={btnRef}
+        >
+          <DrawerOverlay />
+          <DrawerContent padding={"20px"} width={"fit-content"} onClick={onClose} >
+            <GenreList
+              selectedGenre={genre}
+              onSelectGenre={(genre) => setGenre(genre)}
+            />
+          </DrawerContent>
+        </Drawer>
+      </Show>
+      <Image cursor="pointer" src={logo} boxSize="60px" onClick={onOpen} />
       <SearchInput onSearch={onSearch} />
       <ColorModeSwitch />
     </HStack>

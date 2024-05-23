@@ -18,25 +18,25 @@ function GameGrid({ gameQuery }: Props) {
 
   if (error) return <Text>{error}</Text>;
 
-  if (!data || !data.length) {
-    return (
-      <Box
-        padding={2}
-        display={"flex"}
-        justifyContent={"center"}
-        alignItems={"center"}
-        height={"100%"}
-      >
-        <Button
-          padding={"40px"}
-          fontSize={"2xl"}
-          onClick={() => (document.location.href = "/")}
-        >
-          Go Back Home
-        </Button>
-      </Box>
-    );
-  }
+  // if (!data || !data.length) {
+    // return (
+    //   <Box
+    //     padding={2}
+    //     display={"flex"}
+    //     justifyContent={"center"}
+    //     alignItems={"center"}
+    //     height={"100%"}
+    //   >
+    //     <Button
+    //       padding={"40px"}
+    //       fontSize={"2xl"}
+    //       onClick={() => (document.location.href = "/")}
+    //     >
+    //       Go Back Home
+    //     </Button>
+    //   </Box>
+    // );
+  // }
 
   return (
     <SimpleGrid
