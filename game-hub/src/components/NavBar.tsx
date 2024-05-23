@@ -7,8 +7,9 @@ import {
   DrawerContent,
   Show,
 } from "@chakra-ui/react";
+import { PiGameControllerFill } from "react-icons/pi";
 
-import logo from "../assets/logo.webp";
+import logo from "../assets/icon.svg";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
 import { useContext, useRef } from "react";
@@ -27,7 +28,7 @@ function NavBar({ onSearch }: Props) {
   const btnRef = useRef<any>();
 
   return (
-    <HStack padding={"10px"}>
+    <HStack padding={"10px"} spacing={5} paddingX={5}>
       <Show below="lg">
         <Drawer
           isOpen={isOpen}
@@ -36,7 +37,11 @@ function NavBar({ onSearch }: Props) {
           finalFocusRef={btnRef}
         >
           <DrawerOverlay />
-          <DrawerContent padding={"20px"} width={"fit-content"} onClick={onClose} >
+          <DrawerContent
+            padding={"20px"}
+            width={"fit-content"}
+            onClick={onClose}
+          >
             <GenreList
               selectedGenre={genre}
               onSelectGenre={(genre) => setGenre(genre)}
@@ -44,7 +49,7 @@ function NavBar({ onSearch }: Props) {
           </DrawerContent>
         </Drawer>
       </Show>
-      <Image cursor="pointer" src={logo} boxSize="60px" onClick={onOpen} />
+      <PiGameControllerFill cursor="pointer" fontSize="60px" onClick={onOpen} />
       <SearchInput onSearch={onSearch} />
       <ColorModeSwitch />
     </HStack>
