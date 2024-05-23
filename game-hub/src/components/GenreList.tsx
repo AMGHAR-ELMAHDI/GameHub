@@ -7,6 +7,8 @@ import {
   ListItem,
   Spinner,
   Text,
+  useColorMode,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import useGenres, { Genre } from "../hooks/useGenres";
 
@@ -20,6 +22,10 @@ function GenreList({ onSelectGenre, selectedGenre }: Props) {
 
   if (error) return null;
   if (isLoading) return <Spinner />;
+
+  const { toggleColorMode } = useColorMode();
+
+  const color = useColorModeValue("gray.900", "gray.200");
 
   return (
     <>
@@ -42,6 +48,7 @@ function GenreList({ onSelectGenre, selectedGenre }: Props) {
                 fontWeight={data.id === selectedGenre?.id ? "bold" : "normal"}
                 fontSize="lg"
                 variant={"link"}
+                color={color}
                 onClick={() => onSelectGenre(data)}
               >
                 {data.name}

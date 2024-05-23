@@ -1,4 +1,12 @@
-import { Box, Grid, GridItem, HStack, Show } from "@chakra-ui/react";
+import {
+  Box,
+  Grid,
+  GridItem,
+  HStack,
+  Show,
+  useColorMode,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import GameGrid from "./components/GameGrid";
 import GenreList from "./components/GenreList";
@@ -29,6 +37,7 @@ function App() {
   return (
     <>
       <Grid
+        marginX={2}
         templateAreas={{
           base: `"nav" "main"`,
           lg: `"nav nav" "aside main"`,
