@@ -9,8 +9,8 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { PiGameControllerFill } from "react-icons/pi";
+import { IoMenu } from "react-icons/io5";
 
-import logo from "../assets/icon.svg";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
 import { useContext, useRef } from "react";
@@ -50,13 +50,15 @@ function NavBar({ onSearch }: Props) {
           </DrawerContent>
         </Drawer>
       </Show>
-      <Box onClick={() => document.location.href = "/"}>
-        <PiGameControllerFill
-          cursor="pointer"
-          fontSize="60px"
-          onClick={onOpen}
-        />
-      </Box>
+      <HStack>
+        <Show below="lg">
+          <IoMenu fontSize={"30px"} onClick={onOpen} />
+        </Show>
+
+        <Box onClick={() => (document.location.href = "/")}>
+          <PiGameControllerFill cursor="pointer" fontSize="40px" />
+        </Box>
+      </HStack>
       <SearchInput onSearch={onSearch} />
       <ColorModeSwitch />
     </HStack>
