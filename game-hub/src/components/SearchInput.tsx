@@ -12,7 +12,8 @@ function SearchInput({ onSearch }: Props) {
     <form
       onSubmit={(event) => {
         event.preventDefault();
-        if (ref.current) onSearch(ref.current.value);
+        if (ref.current && ref.current.value.length)
+          onSearch(ref.current.value);
       }}
     >
       <InputGroup>

@@ -19,12 +19,13 @@ const useData = <T>(
 
   useEffect(
     () => {
-      const controller = new AbortController();
+      console.log("useData effect", isLoading);
+      
+      if (isLoading) return;
 
       setLoading(true);
       apiClient
         .get<FetchResponse<T>>(endpoint, {
-          signal: controller.signal,
           ...requestConfig,
         })
         .then((response) => {
@@ -37,11 +38,13 @@ const useData = <T>(
           setLoading(false);
         });
 
-      return () => controller.abort();
+        console.log("useData effect", isLoading);
+        
+
+      // return () => controller.abort();
     },
     dependencies ? [...dependencies] : []
   );
-
   return { data, error, isLoading };
 };
 
