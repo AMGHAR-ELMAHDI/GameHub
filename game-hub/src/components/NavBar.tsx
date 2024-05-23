@@ -6,6 +6,7 @@ import {
   DrawerOverlay,
   DrawerContent,
   Show,
+  Box,
 } from "@chakra-ui/react";
 import { PiGameControllerFill } from "react-icons/pi";
 
@@ -49,7 +50,13 @@ function NavBar({ onSearch }: Props) {
           </DrawerContent>
         </Drawer>
       </Show>
-      <PiGameControllerFill cursor="pointer" fontSize="60px" onClick={onOpen} />
+      <Box onClick={() => document.location.href = "/"}>
+        <PiGameControllerFill
+          cursor="pointer"
+          fontSize="60px"
+          onClick={onOpen}
+        />
+      </Box>
       <SearchInput onSearch={onSearch} />
       <ColorModeSwitch />
     </HStack>
