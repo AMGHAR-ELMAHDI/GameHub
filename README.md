@@ -39,7 +39,9 @@
 
 ## About The Project
 
-[![Product Name ScreenShot][product-screenshot]](https://example.com)
+[![ScreenShot][product-screenshot]](https://example.com)
+
+<div width="100%" align="center"><img src="Images/GameHubMobile.png" alt="drawing" width="300"/></div>
 
 ## Features
 
@@ -55,8 +57,6 @@
 - <a href="https://v2.chakra-ui.com/">Chakra</a>
 - <a href="https://axios-http.com/">Axios</a>
 - <a href="https://react-icons.github.io/react-icons/">React-icons</a>
-
-<p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Getting Started
 
@@ -104,4 +104,5 @@ AMGHAR ELMAHDI
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: Images/GameHubDesktop.png
+[product-screenshot2]: Images/GameHubMobile.png
