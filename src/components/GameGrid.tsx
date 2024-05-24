@@ -18,26 +18,6 @@ function GameGrid({ gameQuery }: Props) {
 
   if (error) return <Text>{error}</Text>;
 
-  // if (!data || !data.length) {
-    // return (
-    //   <Box
-    //     padding={2}
-    //     display={"flex"}
-    //     justifyContent={"center"}
-    //     alignItems={"center"}
-    //     height={"100%"}
-    //   >
-    //     <Button
-    //       padding={"40px"}
-    //       fontSize={"2xl"}
-    //       onClick={() => (document.location.href = "/")}
-    //     >
-    //       Go Back Home
-    //     </Button>
-    //   </Box>
-    // );
-  // }
-
   return (
     <SimpleGrid
       columns={{ sm: 1, md: 2, lg: 3, xl: 5 }}
@@ -50,11 +30,12 @@ function GameGrid({ gameQuery }: Props) {
             <GameCardSkeleton />
           </GameCardContainer>
         ))}
-      {data.map((game) => (
-        <GameCardContainer key={game.id}>
-          <GameCard game={game}></GameCard>
-        </GameCardContainer>
-      ))}
+      {data.length &&
+        data.map((game) => (
+          <GameCardContainer key={game.id}>
+            <GameCard game={game}></GameCard>
+          </GameCardContainer>
+        ))}
     </SimpleGrid>
   );
 }

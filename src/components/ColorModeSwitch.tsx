@@ -8,22 +8,23 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { GiEvilMoon } from "react-icons/gi";
+import { MdOutlineWbSunny } from "react-icons/md";
 
 function ColorModeSwitch() {
   const { toggleColorMode, colorMode } = useColorMode();
   const [isDarkMode, setIsDarkMode] = useState<boolean>(colorMode === "dark");
 
   return (
-    <HStack>
-      <GiEvilMoon
-        cursor={"pointer"}
-        fontSize={"30px"}
-        onClick={() => {
-          setIsDarkMode(!isDarkMode);
-          toggleColorMode();
-        }}
-      />
-    </HStack>
+    <Box
+      cursor={"pointer"}
+      onClick={() => {
+        setIsDarkMode(!isDarkMode);
+        toggleColorMode();
+      }}
+    >
+      {colorMode === "dark" && <GiEvilMoon fontSize={"30px"} />}
+      {colorMode != "dark" && <MdOutlineWbSunny fontSize={"30px"} />}
+    </Box>
   );
 }
 
