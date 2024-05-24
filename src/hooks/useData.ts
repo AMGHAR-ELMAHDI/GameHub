@@ -19,8 +19,6 @@ const useData = <T>(
 
   useEffect(
     () => {
-      console.log("useData effect", isLoading);
-      
       if (isLoading) return;
 
       setLoading(true);
@@ -38,8 +36,6 @@ const useData = <T>(
           setLoading(false);
         });
 
-        console.log("useData effect", isLoading);
-        
 
       // return () => controller.abort();
     },
