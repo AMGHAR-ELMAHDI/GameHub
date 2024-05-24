@@ -12,7 +12,7 @@
     This is a website built using React and styled with Chakra UI. The website allows users to view and explore a library of games. The games can be filtered and sorted by various criteria, including genre, platform, and release date.
     <br />
     <br />
-    <a href="https://github.com/AMGHAR-ELMAHDI/GameHub">View Demo</a>
+    <a href="https://game-hub-tawny-kappa.vercel.app/">View Demo</a>
   </p>
 </div>
 
@@ -90,11 +90,7 @@ To get a local copy up and running follow these simple example steps.
  npm run preview
 ```
 
-```sh
-Open the app in your browser: http://localhost:5173
-```
-
-  <h2 align="center"><a href="http://localhost:5173">Click Here for Local Preview</a></h2>
+  <h2 align="center"><a href="https://game-hub-tawny-kappa.vercel.app/">Click Here for Preview</a></h2>
 
 ## Contact
 
