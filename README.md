@@ -39,8 +39,7 @@
 
 ## About The Project
 
-[![ScreenShot][product-screenshot]](https://example.com)
-
+<img src="Images/GameHubDesktop.png" alt="drawing" /><
 <div width="100%" align="center"><img src="Images/GameHubMobile.png" alt="drawing" width="300"/></div>
 
 ## Features
